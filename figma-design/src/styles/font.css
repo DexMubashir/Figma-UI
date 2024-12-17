@@ -1,0 +1,14 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/MerriweatherSansBold.ttf");
+  font-family: "Merriweather Sans";
+  font-weight: 700;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/MerriweatherSansRegular.ttf");
+  font-family: "Merriweather Sans";
+  font-weight: 400;
+}
