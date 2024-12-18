@@ -2,20 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-li:focus-visible{
-    outline:none;
+li:focus-visible {
+  outline: none;
 }
-li:hover{
-    cursor:pointer;
+li:hover {
+  cursor: pointer;
 }
 @layer base {
-    :root {
-        --black_900: #000000;
-        --black_900_7f: #0000007f;
-        --black_900_b2: #000000b2;
-        --deep_purple_900: #3a2d78;
-        --gray_200: #f0f0f0;
-        --gray_200_01: #eaeaea;
-        
-    }
+  :root {
+    --black_900: #000000;
+    --black_900_7f: #0000007f;
+    --black_900_b2: #000000b2;
+    --deep_purple_900: #3a2d78;
+    --gray_200: #f0f0f0;
+    --gray_200_01: #eaeaea;
+    --gray_600: #818181;
+    --light_blue_800: #137aa8;
+    --orange_300: #f8b84e;
+    --purple_400: #d837b9;
+    --white_a700: #ffffff;
+
+    --radius-xs: 12px;
+    --radius-sm: 14px;
+    --radius-md: 18px;
+    --radius-lg: 20px;
+    --radius-xl: 24px;
+    --radius-2xl: 32px;
+    --radius-3xl: 40px;
+    --radius-4xl: 110px;
+    --radius-5xl: 120px;
+
+    --space-xs: 6px;
+    --space-sm: 8px;
+    --space-md: 10px;
+    --space-lg: 12px;
+    --space-xl: 14px;
+    --space-2xl: 16px;
+    --space-3xl: 24px;
+    --space-4xl: 32px;
+    --space-5xl: 38px;
+    --space-6xl: 40px;
+    --space-7xl: 48px;
+    --space-8xl: 80px;
+  }
+  [type="text"],
+  input:where(:not([type])),
+  [type="email"],
+  [type="number"],
+  [type="tel"],
+  [type="password"],
+  [type="search"],
+  [type="url"],
+  [type="date"],
+  [type="month"],
+  [type="week"],
+  [type="time"],
+  [type="datetime-local"],
+  [multiple],
+  textarea,
+  select {
+    appearance: none;
+    background-color: transparent;
+    border-color: unset;
+    border-width: 0;
+    border-radius: unset;
+    padding: unset;
+    font-size: unset;
+    line-height: unset;
+  }
+  [type="text"]:focus,
+  [type="email"]:focus,
+  [type="url"]:focus,
+  [type="password"]:focus,
+  [type="number"]:focus,
+  [type="date"]:focus,
+  [type="search"]:focus,
+  [multiple]:focus,
+  textarea:focus,
+  select:focus {
+    --tw-ring-color: transparent;
+    border-color: transparent;
+  }
+  [type="radio"]:focus,
+  [type="checkbox"]:focus {
+    --tw-ring-color: transparent;
+  }
+}
+@layer components {
+  .container-xs {
+    @apply w-full mx-auto max-w-[1200px];
+  }
 }
