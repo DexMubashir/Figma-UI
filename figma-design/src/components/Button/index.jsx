@@ -64,3 +64,4 @@ Button.propTypes = {
     "gray_200_01",
   ]),
 };
+export { Button };

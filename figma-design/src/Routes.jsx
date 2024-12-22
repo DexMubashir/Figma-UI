@@ -1,13 +1,13 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import Home from "pages/Home";
-import NotFound from "pages/NotFound";
-import Home1 from "pages/Home1";
-import HomeOne from "pages/HomeOne";
-import HomeTwo from "pages/HomeTwo";
-import HomeThree from "pages/HomeThree";
-import HomeFour from "pages/HomeFour";
-import StudentProfile from "pages/StudentProfile";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Home1 from "./pages/Home1";
+import HomeOne from "./pages/HomeOne";
+import HomeTwo from "./pages/HomeTwo";
+import HomeThree from "./pages/HomeThree";
+import HomeFour from "./pages/HomeFour";
+import StudentProfile from "./pages/StudentProfile";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
